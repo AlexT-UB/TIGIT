@@ -82,22 +82,25 @@
       <v-btn
           :left="true"
           :absolute="true"
-          class="position-absolute bottom-0 start-0"
           bottom
           elevation="2"
-          icon = "mdi-human"
+          fab
           outlined
-      ></v-btn>
+      ><v-icon>mdi-human</v-icon></v-btn>
+      <AddPost/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 
+import AddPost from "@/components/AddPost";
+
 export default {
   name: 'App',
 
   components: {
+    AddPost,
   },
 
   methods: {
