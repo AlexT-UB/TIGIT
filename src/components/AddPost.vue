@@ -5,17 +5,16 @@
         persistent
         max-width="600px"
     >
-      <template v-slot:activator="{ on, attrs }">
+      <template v-slot:activator="{ on }">
         <v-btn
-            color="black"
-            dark
-            fab
-            outlined
+            color=#1DE9B6
             :right="true"
             :absolute="true"
             bottom
             elevation="2"
-            v-bind="attrs"
+            fab
+            outlined
+            style="position:fixed; top:90%; right:5%;"
             v-on="on"
         >
           <v-icon>mdi-plus</v-icon>
