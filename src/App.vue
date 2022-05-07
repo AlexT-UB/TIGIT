@@ -76,6 +76,16 @@
             </v-list-item-content>
           </v-list-item>
         </v-list>
+
+        <v-list-item two-line>
+          <v-list-item-content>
+            <v-list-item-title>Guardados/Favoritos</v-list-item-title>
+            <v-list-item-subtitle>Gatos</v-list-item-subtitle>
+            <v-list-item-subtitle>Guarderia</v-list-item-subtitle>
+            <v-list-item-subtitle>UB</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
       </v-navigation-drawer>
     </v-card>
 
@@ -91,104 +101,115 @@
                 color= "white"
                 dark
             >
-              <div class="d-flex justify-space-between flex-row">
+              <div >
                 <div>
-                  <v-card-title>
-                    <div color = "black" class="text-h6"
-                         v-text="item.title">
-                    </div>
-                    <v-spacer></v-spacer>
-                    <div class="text-body-2 font-italic"
-                         v-text="item.date">
-                    </div>
-                  </v-card-title>
-
-                  <v-card-subtitle>
-                    <p v-text = "item.username">
-                    </p>
-                    <p v-text = "item.hastags">
-                    </p>
-                  </v-card-subtitle>
-
-                  <v-card-text>
-                    <p v-text="item.text">
-                    </p>
-
-                    <v-row no-gutters >
-                      <v-col
-                          cols="15"
-                          sm="2"
+                  <v-row no-gutters>
+                    <v-col cols="auto">
+                      <v-avatar
+                          class="ma-11 d-flex"
+                          size="125"
+                          tile
                       >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-comment-text-multiple-outline</v-icon>
-                        </v-btn>
-                      </v-col>
+                        <v-img :src=item.image></v-img>
+                      </v-avatar>
+                      <p class="text-center" v-text = "item.username">
+                      </p>
+                    </v-col>
+                    <v-col>
+                      <v-card-title>
+                        <div class="text-h6"
+                             v-text="item.title">
+                        </div>
+                        <v-spacer></v-spacer>
+                        <div class="text-body-2 font-italic"
+                             v-text="item.date">
+                        </div>
+                      </v-card-title>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
-                      >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-arrow-up-bold</v-icon>
-                        </v-btn>
-                        <v-icon class="body-2" v-text="22" color = "black" >
-                        </v-icon>
-                      </v-col>
+                      <v-card-subtitle>
+                        <div>
+                          <div class="text-body-2 font-italic"
+                               v-text="item.date">
+                          </div>
+                          <p class ="light-blue--text" v-text = "item.hastags">
+                          </p>
+                        </div>
+                      </v-card-subtitle>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
-                      >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-arrow-down-bold</v-icon>
-                        </v-btn>
-                        <v-icon class="body-2" v-text="5" color = "black" >
-                        </v-icon>
-                      </v-col>
+                      <v-card-text>
+                        <p v-text="item.text">
+                        </p>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
-                      >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-share-variant</v-icon>
-                        </v-btn>
-                      </v-col>
+                        <v-row no-gutters >
+                          <v-col
 
-                      <v-col
-                          cols="15"
-                          sm="2"
-                      >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-bookmark</v-icon>
-                        </v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
+                              cols="15"
+                              sm="2"
+                          >
+                            <v-btn
+                                icon
+                                color="black"
+                            >
+                              <v-icon>mdi-comment-text-multiple-outline</v-icon>
+                            </v-btn>
+                          </v-col>
+
+                          <v-col
+                              cols="15"
+                              sm="2"
+                          >
+                            <v-btn
+                                icon
+                                color="black"
+                            >
+                              <v-icon>mdi-arrow-up-bold</v-icon>
+                            </v-btn>
+                            <v-icon class="body-2" v-text="22" color = "black" >
+                            </v-icon>
+                          </v-col>
+
+                          <v-col
+                              cols="15"
+                              sm="2"
+                          >
+                            <v-btn
+                                icon
+                                color="black"
+                            >
+                              <v-icon>mdi-arrow-down-bold</v-icon>
+                            </v-btn>
+                            <v-icon class="body-2" v-text="5" color = "black" >
+                            </v-icon>
+                          </v-col>
+
+                          <v-col
+                              cols="15"
+                              sm="2"
+                          >
+                            <v-btn
+                                icon
+                                color="black"
+                            >
+                              <v-icon>mdi-share-variant</v-icon>
+                            </v-btn>
+                          </v-col>
+
+                          <v-col
+                              cols="15"
+                              sm="2"
+                          >
+                            <v-btn
+                                icon
+                                color="black"
+                            >
+                              <v-icon>mdi-bookmark</v-icon>
+                            </v-btn>
+                          </v-col>
+                        </v-row>
+                      </v-card-text>
+                    </v-col>
+                  </v-row>
                 </div>
-
-                <v-avatar
-                    class="ma-11"
-                    size="125"
-                    tile
-                >
-                  <v-img :src=item.image></v-img>
-                </v-avatar>
               </div>
             </v-card>
           </v-col>
