@@ -110,9 +110,9 @@
                           size="125"
                           tile
                       >
-                        <v-img :src=item.image></v-img>
+                        <v-img src="./assets/Profile_Pic_4.jpg"></v-img>
                       </v-avatar>
-                      <p class="text-center" v-text = "item.username">
+                      <p class="text-center black--text" v-text = "item.username">
                       </p>
                     </v-col>
                     <v-col>
@@ -128,9 +128,6 @@
 
                       <v-card-subtitle>
                         <div>
-                          <div class="text-body-2 font-italic"
-                               v-text="item.date">
-                          </div>
                           <p class ="light-blue--text" v-text = "item.hastags">
                           </p>
                         </div>
@@ -142,7 +139,6 @@
 
                         <v-row no-gutters >
                           <v-col
-
                               cols="15"
                               sm="2"
                           >
@@ -209,6 +205,7 @@
                       </v-card-text>
                     </v-col>
                   </v-row>
+                  <v-img :src=item.image></v-img>
                 </div>
               </div>
             </v-card>
@@ -259,7 +256,7 @@ export default {
               'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
               'aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ' +
               'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa' +
-              'qui officia deserunt mollit anim id est laborum.',
+              'qui officia deserunt mollit anim id est laborum.', profile_pic: "./assets/Profile_Pic.jpg",
           image: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg', hastags: "#UB, #Hashtags"},
         { title: 'Second Post', username: 'Another_Random_User', date: '4:59 5/6/2022',
           text: 'This is an example text for the second one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
@@ -267,6 +264,7 @@ export default {
               ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
               'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
               'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          profile_pic: "./assets/Profile_Pic_2.jpg",
           hastags: "#UB, #Hashtags"},
         { title: 'Third Post', username: 'Placeholder_McDoctorate', date: '4:58 5/6/2022',
           text: 'This is an example text for the third one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
@@ -274,6 +272,7 @@ export default {
               ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
               'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
               'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          profile_pic: "./assets/Profile_Pic_3.jpg",
           image: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg', hastags: "#UB, " +
               "#Hashtags"},
         { title: 'Fourth Post', username: 'Placeholder_McDoctorate', date: '4:57 5/6/2022',
@@ -281,14 +280,18 @@ export default {
               'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud' +
               ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
               'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
-              'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
+              'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          profile_pic: "./assets/Profile_Pic_4.jpg"},
         { title: 'Fifth Post', username: 'Placeholder_McDoctorate', date: '4:57 5/6/2022',
+          profile_pic: "./assets/Profile_Pic_4.jpg",
           image: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
           text: 'This is an example text for the fifth one'},
         { title: 'Sixt Post', username: 'Placeholder_McDoctorate', date: '4:54 5/6/2022',
-          text: 'This is an example text for the sixt one'},
+          text: 'This is an example text for the sixt one',
+          profile_pic: "./assets/Profile_Pic_4.jpg"},
         { title: 'Seventh Post', username: 'Placeholder_McDoctorate', date: '4:52 5/6/2022',
-          text: 'This is an example text for the seventh one'},
+          text: 'This is an example text for the seventh one',
+          profile_pic: "./assets/Profile_Pic_4.jpg"},
       ],
       navigation: [
         { title: 'Home', icon: 'mdi-home-city' },
