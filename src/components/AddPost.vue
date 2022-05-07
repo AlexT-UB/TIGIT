@@ -7,14 +7,13 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn
-            color=#1DE9B6
+            color=#4797C4
             :right="true"
             :absolute="true"
             bottom
             elevation="2"
             fab
-            outlined
-            style="position:fixed; top:90%; right:5%;"
+            style="position:fixed; top:93%; right:5%;"
             v-on="on"
         >
           <v-icon>mdi-plus</v-icon>
