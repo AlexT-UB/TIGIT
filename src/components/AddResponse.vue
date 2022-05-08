@@ -7,16 +7,12 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn
-            color=#3685B1
-            :right="true"
-            :absolute="true"
-            bottom
-            elevation="2"
-            fab
-            style="position:fixed; top:93%; right:5%;"
+            icon
+            color="black"
             v-on="on"
+            fab
         >
-          <v-icon>mdi-plus</v-icon>
+          <v-icon>mdi-comment-text-multiple-outline</v-icon>
         </v-btn>
       </template>
       <v-card class="pt-md-8" >
@@ -27,37 +23,26 @@
           <v-icon class="text-center" x-large>mdi-plus</v-icon>
         </v-row>
         <v-card-text class="text-center pt-md-8">
-          <span class="text-h5">New Post</span>
+          <span class="text-h5">Respond To Post</span>
         </v-card-text>
         <v-card-text>
           <v-container>
             <v-row no-gutters>
               <v-col cols="12">
-              <v-text-field
-                    label="Title*"
-                    required
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12">
                 <v-text-field
-                    label="Text*"
+                    label="Response*"
                     required
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12">
-                <v-text-field
-                    label="Hashtags (Recomended)"
                 ></v-text-field>
               </v-col>
               <v-col
                   cols="12"
               >
-                <v-card-text class ="text-body-1 text-center">Add files</v-card-text>
+                <v-card-text class ="text-body-1 text-center pt-md-n8">Add files</v-card-text>
               </v-col>
               <v-col
                   cols="12"
                   sm="6"
-                  class="pt-6"
+                  class="pt-2"
               >
                 <v-btn
                     icon

@@ -8,10 +8,11 @@
               :key="i"
               cols="12"
           >
-            <v-card
+            <v-card :to="'/about'" exact tile
                 color= "white"
                 dark
             >
+              <v-card-actions>
               <v-row no-gutters>
                 <v-col cols="auto">
                   <v-avatar
@@ -21,7 +22,7 @@
                   >
                     <img src="../assets/Profile_Pic_1.jpg">
                   </v-avatar>
-                  <p class="text-center black--text" v-text = "item.username">
+                  <p class="text-center black--text pt-n16" v-text = "item.username">
                   </p>
                 </v-col>
                 <v-col>
@@ -47,12 +48,7 @@
                           cols="15"
                           sm="2"
                       >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <router-link to="/about"><v-icon>mdi-comment-text-multiple-outline</v-icon></router-link>
-                        </v-btn>
+                        <AddResponse/>
                       </v-col>
 
                       <v-col
@@ -111,15 +107,17 @@
                 </v-col>
 
               </v-row>
+              </v-card-actions>
               <li v-if="item.image !== null">
-                <v-row justify="center">
-                <v-img :src=item.image
-                       max-width="500"
-                       :aspect-ratio="16/9">
-                </v-img>
+                <v-row justify="center"
+                       class = "pb-12">
+                  <v-img :src=item.image
+                         max-width="500"
+                         :aspect-ratio="16/9">
+                  </v-img>
                 </v-row>
               </li>
-              <li v-if="item.docs !== null" class="pl-lg-10 pb-lg-6 mt-n10">
+              <li v-if="item.docs !== null" class="pl-lg-16 pb-lg-6 mt-n10">
                 <v-text-field class = "black--text" v-text=item.docs></v-text-field>
               </li>
             </v-card>
@@ -145,12 +143,13 @@
 <script>
 
 import AddPost from "@/components/AddPost";
-
+import AddResponse from "@/components/AddResponse";
 export default {
   name: 'HomeView',
 
   components: {
     AddPost,
+    AddResponse
   },
 
   data () {
