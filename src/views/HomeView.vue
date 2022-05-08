@@ -1,92 +1,5 @@
 <template>
-  <app>
-  <v-app-bar
-        app
-        color=#3685B1
-        dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-            alt="Vuetify Logo"
-            class="shrink mr-2"
-            contain
-            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-            transition="scale-transition"
-            width="40"
-        />
-      </div>
-
-      <div :style="{width: '500px'}">
-        <v-text-field
-            v-model="message"
-            hide-details
-            prepend-icon="mdi-magnify"
-            append-icon = "mdi-filter"
-            clear-icon="mdi-close-circle"
-            clearable
-            label="Introduce tu búsqueda..."
-            type="text"
-            single-line
-            dark
-            @click:clear="clearMessage"
-        ></v-text-field>
-      </div>
-
-    </v-app-bar>
-    <v-card>
-      <v-navigation-drawer
-          color=#3685B1
-          dark
-          v-model="drawer"
-          :mini-variant.sync="mini"
-          permanent
-          app right
-      >
-        <v-list-item class="px-2">
-          <v-list-item-avatar>
-            <v-img src="../assets/Profile_Pic.jpg"></v-img>
-          </v-list-item-avatar>
-
-          <v-list-item-title>CatLover22</v-list-item-title>
-
-          <v-btn
-              color=#1DE9B6
-              icon
-              @click.stop="mini = !mini"
-          >
-            <v-icon>mdi-chevron-left</v-icon>
-          </v-btn>
-        </v-list-item>
-
-        <v-divider></v-divider>
-
-        <v-list dense>
-          <v-list-item
-              v-for="item in navigation"
-              :key="item.title"
-              link
-          >
-            <v-list-item-icon>
-              <v-icon color=#235571>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-
-        <v-list-item two-line>
-          <v-list-item-content>
-            <v-list-item-title>Guardados/Favoritos</v-list-item-title>
-            <v-list-item-subtitle>Gatos</v-list-item-subtitle>
-            <v-list-item-subtitle>Guarderia</v-list-item-subtitle>
-            <v-list-item-subtitle>UB</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-
-      </v-navigation-drawer>
-    </v-card>
+  <v-app>
     <v-main>
       <v-container>
         <v-row>
@@ -106,7 +19,7 @@
                       size="125"
                       tile
                   >
-                    <v-img src="../assets/Profile_Pic_4.jpg"></v-img>
+                    <img src="../assets/Profile_Pic_1.jpg">
                   </v-avatar>
                   <p class="text-center black--text" v-text = "item.username">
                   </p>
@@ -198,11 +111,15 @@
                 </v-col>
 
               </v-row>
-              <li v-if="item.image !== null" class = "align-content-center">
+              <li v-if="item.image !== null">
+                <v-row justify="center">
                 <v-img :src=item.image
                        max-width="500"
                        :aspect-ratio="16/9">
                 </v-img>
+                </v-row>
+              </li>
+              <li v-if="item.docs !== null" class="pl-lg-10 pb-lg-6 mt-n10">
                 <v-text-field class = "black--text" v-text=item.docs></v-text-field>
               </li>
             </v-card>
@@ -222,7 +139,7 @@
       ><v-icon>mdi-human</v-icon></v-btn>
 
     </v-main>
-  </app>
+  </v-app>
 </template>
 
 <script>
@@ -261,7 +178,7 @@ export default {
               ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
               'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
               'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          profile_pic: "./assets/Profile_Pic_2.jpg",
+          profile_pic: "./assets/Profile_Pic_2.jpg", image: null, docs: "Another_Docs.pptx",
           hastags: "#UB, #Hashtags"},
         { title: 'Third Post', username: 'Placeholder_McDoctorate', date: '4:58 5/6/2022',
           text: 'This is an example text for the third one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
@@ -269,7 +186,7 @@ export default {
               ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
               'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
               'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          profile_pic: "./assets/Profile_Pic_3.jpg",
+          profile_pic: "./assets/Profile_Pic_3.jpg", docs: null,
           image: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg', hastags: "#UB, " +
               "#Hashtags"},
         { title: 'Fourth Post', username: 'Placeholder_McDoctorate', date: '4:57 5/6/2022',
@@ -278,17 +195,17 @@ export default {
               ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
               'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
               'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          profile_pic: "./assets/Profile_Pic_4.jpg"},
+          profile_pic: "./assets/Profile_Pic_4.jpg",image: null, docs: null},
         { title: 'Fifth Post', username: 'Placeholder_McDoctorate', date: '4:57 5/6/2022',
-          profile_pic: "./assets/Profile_Pic_4.jpg",
+          profile_pic: "../assets/Profile_Pic_4.jpg",
           image: 'https://cdn.vuetifyjs.com/images/cards/foster.jpg',
-          text: 'This is an example text for the fifth one'},
+          text: 'This is an example text for the fifth one', docs: null},
         { title: 'Sixt Post', username: 'Placeholder_McDoctorate', date: '4:54 5/6/2022',
           text: 'This is an example text for the sixt one',
-          profile_pic: "./assets/Profile_Pic_4.jpg"},
+          profile_pic: "./assets/Profile_Pic_4.jpg",image: null, docs: null},
         { title: 'Seventh Post', username: 'Placeholder_McDoctorate', date: '4:52 5/6/2022',
           text: 'This is an example text for the seventh one',
-          profile_pic: "../assets/Profile_Pic_4.jpg"}
+          profile_pic: "../assets/Profile_Pic_4.jpg",image: null, docs: null}
       ],
     }
   },
