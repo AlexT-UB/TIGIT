@@ -3,14 +3,16 @@
     <v-app-bar
         app
         color=#3685B1
-        shrink-on-scroll
         dark
+        prominent
+        src="./assets/logo.jpg"
+        fade-img-on-scroll
     >
       <v-row justify="center">
-        <v-img src="./assets/Profile_Pic_1.jpg"
-        max-width="200"
-        max-height="200">
-          LOGO
+        <v-img src="./assets/logo.jpg"
+               max-width="200"
+               max-height="200">
+          TIGIT
         </v-img>
       </v-row>
       <v-row :style="{width: '500px'}" justify="center">
@@ -38,6 +40,7 @@
           :mini-variant.sync="mini"
           permanent
           app right
+          mini-variant-width = "90px"
       >
         <v-list-item class="px-2">
           <v-list-item-avatar>
@@ -51,7 +54,7 @@
               icon
               @click.stop="mini = !mini"
           >
-            <v-icon>mdi-chevron-left</v-icon>
+            <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
         </v-list-item>
 
@@ -85,23 +88,19 @@
       </v-navigation-drawer>
     </v-card>
     <router-view/>
-    </v-app>
+  </v-app>
 </template>
 
 <script>
-
 export default {
   name: 'App',
-
   components: {
   },
-
   methods: {
     clearMessage () {
       this.message = ''
     },
   },
-
   data () {
     return {
       drawer: true,
@@ -117,7 +116,6 @@ export default {
 </script>
 
 <style>
-
 .v-card__title {
   color: black!important;
 }
