@@ -208,7 +208,7 @@ export default {
         { title: 'Seventh Post', username: 'Placeholder_McDoctorate', date: '4:52 5/6/2022',
           text: 'This is an example text for the seventh one',
           profile_pic: "../assets/Profile_Pic_4.jpg",image: null, docs: null}
-      ],
+      ]
     }
   },
 };

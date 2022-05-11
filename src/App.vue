@@ -5,15 +5,13 @@
         color=#3685B1
         dark
         prominent
-        src="./assets/logo.jpg"
-        fade-img-on-scroll
     >
       <v-row justify="center">
-        <v-img src="./assets/logo.jpg"
-               max-width="200"
-               max-height="200">
-          TIGIT
-        </v-img>
+        <router-link style="text-decoration: none; color: inherit;"
+                     to="/">
+        <img src="./assets/logo.png"
+               width="100">
+        </router-link>
       </v-row>
       <v-row :style="{width: '500px'}" justify="center">
         <v-text-field
@@ -29,6 +27,10 @@
             dark
             @click:clear="clearMessage"
         ></v-text-field>
+      </v-row>
+      <v-row>
+        <v-text-field>
+          TIGIT</v-text-field>
       </v-row>
     </v-app-bar>
 

@@ -19,8 +19,8 @@
         <v-row
             justify="center"
         >
-          LOGO
-          <v-icon class="text-center" x-large>mdi-plus</v-icon>
+          <img src="../assets/logo.png"
+               width = 150>
         </v-row>
         <v-card-text class="text-center pt-md-8">
           <span class="text-h5">Respond To Post</span>
