@@ -8,24 +8,29 @@
               :key="i"
               cols="12"
           >
-            <v-card :to="'/about'" exact tile
+            <v-card
                 color= "white"
                 dark
             >
-              <v-card-actions>
+
               <v-row no-gutters>
-                <v-col cols="auto">
-                  <v-avatar
-                      class="ma-11 d-flex"
-                      size="125"
-                      tile
-                  >
-                    <img src="../assets/Profile_Pic_1.jpg">
-                  </v-avatar>
-                  <p class="text-center black--text pt-n16" v-text = "item.username">
-                  </p>
-                </v-col>
+                <router-link style="text-decoration: none; color: inherit;"
+                    to="/post">
+                  <v-col cols="auto">
+                    <v-avatar
+                        class="ma-11 d-flex"
+                        size="125"
+                        tile
+                    >
+                      <img src="../assets/Profile_Pic_1.jpg">
+                    </v-avatar>
+                    <p class="text-center black--text pt-n16" v-text = "item.username">
+                    </p>
+                  </v-col>
+                </router-link>
                 <v-col>
+                  <router-link style="text-decoration: none; color: inherit;"
+                               to="/post">
                   <v-card-title>
                     <div class="text-h6 black--text"
                          v-text="item.title">
@@ -39,75 +44,73 @@
                   <v-card-subtitle class ="light-blue--text text-left" v-text = "item.hastags">
                   </v-card-subtitle>
 
-                  <v-card-text class="black--text">
-                    <p v-text="item.text">
-                    </p>
+                  <v-card-text class="black--text" v-text="item.text"/>
 
-                    <v-row no-gutters >
-                      <v-col
-                          cols="15"
-                          sm="2"
-                      >
-                        <AddResponse/>
-                      </v-col>
+                  </router-link>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
-                      >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-arrow-up-bold</v-icon>
-                        </v-btn>
-                        <v-icon class="body-2" v-text="22" color = "black" >
-                        </v-icon>
-                      </v-col>
+                  <v-row no-gutters>
+                    <v-col
+                        cols="15"
+                        sm="2"
+                    >
+                      <AddResponse/>
+                    </v-col>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
+                    <v-col
+                        cols="15"
+                        sm="2"
+                    >
+                      <v-btn
+                          icon
+                          color="black"
                       >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-arrow-down-bold</v-icon>
-                        </v-btn>
-                        <v-icon class="body-2" v-text="5" color = "black" >
-                        </v-icon>
-                      </v-col>
+                        <v-icon>mdi-arrow-up-bold</v-icon>
+                      </v-btn>
+                      <v-icon class="body-2" v-text="22" color = "black" >
+                      </v-icon>
+                    </v-col>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
+                    <v-col
+                        cols="15"
+                        sm="2"
+                    >
+                      <v-btn
+                          icon
+                          color="black"
                       >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-share-variant</v-icon>
-                        </v-btn>
-                      </v-col>
+                        <v-icon>mdi-arrow-down-bold</v-icon>
+                      </v-btn>
+                      <v-icon class="body-2" v-text="5" color = "black" >
+                      </v-icon>
+                    </v-col>
 
-                      <v-col
-                          cols="15"
-                          sm="2"
+                    <v-col
+                        cols="15"
+                        sm="2"
+                    >
+                      <v-btn
+                          icon
+                          color="black"
                       >
-                        <v-btn
-                            icon
-                            color="black"
-                        >
-                          <v-icon>mdi-bookmark</v-icon>
-                        </v-btn>
-                      </v-col>
-                    </v-row>
-                  </v-card-text>
+                        <v-icon>mdi-share-variant</v-icon>
+                      </v-btn>
+                    </v-col>
+
+                    <v-col
+                        cols="15"
+                        sm="2"
+                    >
+                      <v-btn
+                          icon
+                          color="black"
+                      >
+                        <v-icon>mdi-bookmark</v-icon>
+                      </v-btn>
+                    </v-col>
+                  </v-row>
                 </v-col>
 
               </v-row>
-              </v-card-actions>
               <li v-if="item.image !== null">
                 <v-row justify="center"
                        class = "pb-12">
@@ -118,7 +121,7 @@
                 </v-row>
               </li>
               <li v-if="item.docs !== null" class="pl-lg-16 pb-lg-6 mt-n10">
-                <v-text-field class = "black--text" v-text=item.docs></v-text-field>
+                <v-text-field class = "black--text" v-text=item.docs ></v-text-field>
               </li>
             </v-card>
           </v-col>
@@ -205,7 +208,7 @@ export default {
         { title: 'Seventh Post', username: 'Placeholder_McDoctorate', date: '4:52 5/6/2022',
           text: 'This is an example text for the seventh one',
           profile_pic: "../assets/Profile_Pic_4.jpg",image: null, docs: null}
-      ],
+      ]
     }
   },
 };
@@ -228,7 +231,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #0000;
     }
   }
 }

@@ -3,15 +3,15 @@
     <v-app-bar
         app
         color=#3685B1
-        shrink-on-scroll
         dark
+        prominent
     >
       <v-row justify="center">
-        <v-img src="./assets/Profile_Pic_1.jpg"
-        max-width="200"
-        max-height="200">
-          LOGO
-        </v-img>
+        <router-link style="text-decoration: none; color: inherit;"
+                     to="/">
+        <img src="./assets/logo.png"
+               width="100">
+        </router-link>
       </v-row>
       <v-row :style="{width: '500px'}" justify="center">
         <v-text-field
@@ -28,6 +28,10 @@
             @click:clear="clearMessage"
         ></v-text-field>
       </v-row>
+      <v-row>
+        <v-text-field>
+          TIGIT</v-text-field>
+      </v-row>
     </v-app-bar>
 
     <v-card>
@@ -38,6 +42,7 @@
           :mini-variant.sync="mini"
           permanent
           app right
+          mini-variant-width = "90px"
       >
         <v-list-item class="px-2">
           <v-list-item-avatar>
@@ -51,7 +56,7 @@
               icon
               @click.stop="mini = !mini"
           >
-            <v-icon>mdi-chevron-left</v-icon>
+            <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
         </v-list-item>
 
@@ -85,23 +90,19 @@
       </v-navigation-drawer>
     </v-card>
     <router-view/>
-    </v-app>
+  </v-app>
 </template>
 
 <script>
-
 export default {
   name: 'App',
-
   components: {
   },
-
   methods: {
     clearMessage () {
       this.message = ''
     },
   },
-
   data () {
     return {
       drawer: true,
@@ -117,7 +118,6 @@ export default {
 </script>
 
 <style>
-
 .v-card__title {
   color: black!important;
 }
