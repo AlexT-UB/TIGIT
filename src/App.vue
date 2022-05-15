@@ -2,15 +2,14 @@
   <v-app class="App">
     <v-app-bar
         app
-        color=#3685B1
-        dark
+        color=#6bb2b8
         prominent
     >
-      <v-row justify="center">
-        <router-link style="text-decoration: none; color: inherit;"
+      <v-row align="center" justify="space-around">
+        <router-link style="text-decoration: none; color:#fd6b3c;"
                      to="/">
-        <img src="./assets/logo.png"
-               width="100">
+        <img src="./assets/logo.jpeg"
+               height="135">
         </router-link>
       </v-row>
       <v-row :style="{width: '500px'}" justify="center">
@@ -24,25 +23,28 @@
             label="Introduce tu búsqueda..."
             type="text"
             single-line
-            dark
+            color=#fd6b3c
             @click:clear="clearMessage"
         ></v-text-field>
       </v-row>
       <v-row>
-        <v-text-field>
-          TIGIT</v-text-field>
+        <v-btn
+            style="position:fixed; top:10%; right:2%;"
+            color=#fd6b3c
+            icon
+            @click.stop="drawer = !drawer"
+        >
+          <v-icon color=#fd6b3c>mdi-chevron-left</v-icon>
+        </v-btn>
       </v-row>
     </v-app-bar>
 
     <v-card>
       <v-navigation-drawer
-          color=#3685B1
-          dark
+          color=#6bb2b8
           v-model="drawer"
-          :mini-variant.sync="mini"
-          permanent
+          temporary
           app right
-          mini-variant-width = "90px"
       >
         <v-list-item class="px-2">
           <v-list-item-avatar>
@@ -50,14 +52,6 @@
           </v-list-item-avatar>
 
           <v-list-item-title>CatLover22</v-list-item-title>
-
-          <v-btn
-              color=#1DE9B6
-              icon
-              @click.stop="mini = !mini"
-          >
-            <v-icon>mdi-chevron-right</v-icon>
-          </v-btn>
         </v-list-item>
 
         <v-divider></v-divider>
@@ -69,7 +63,7 @@
               link
           >
             <v-list-item-icon>
-              <v-icon color=#235571>{{ item.icon }}</v-icon>
+              <v-icon color=#fd6b3c>{{ item.icon }}</v-icon>
             </v-list-item-icon>
 
             <v-list-item-content>

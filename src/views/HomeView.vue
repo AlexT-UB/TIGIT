@@ -12,7 +12,6 @@
                 color= "white"
                 dark
             >
-
               <v-row no-gutters>
                 <router-link style="text-decoration: none; color: inherit;"
                     to="/post">
@@ -41,7 +40,7 @@
                     </div>
                   </v-card-title>
 
-                  <v-card-subtitle class ="light-blue--text text-left" v-text = "item.hastags">
+                  <v-card-subtitle class ="text-left secondary--text" v-text = "item.hastags">
                   </v-card-subtitle>
 
                   <v-card-text class="black--text" v-text="item.text"/>
@@ -129,15 +128,14 @@
       </v-container>
       <AddPost/>
       <v-btn
-          color=#4797C4
+          color=#6bb2b8
           :left="true"
           :absolute="true"
           bottom
           elevation="2"
           fab
-          dark
-          style="position:fixed; top:93%; left:1%;"
-      ><v-icon>mdi-human</v-icon></v-btn>
+          style="position:fixed; top:90%; left:5%;"
+      ><v-icon color=#fd6b3c>mdi-human</v-icon></v-btn>
 
     </v-main>
   </v-app>
