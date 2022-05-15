@@ -16,12 +16,6 @@
         </v-btn>
       </template>
       <v-card class="pt-md-8" >
-        <v-row
-            justify="center"
-        >
-          <img src="../assets/logo.png"
-               width = 150>
-        </v-row>
         <v-card-text class="text-center pt-md-8">
           <span class="text-h5">Respond To Post</span>
         </v-card-text>
@@ -32,6 +26,7 @@
                 <v-text-field
                     label="Response*"
                     required
+                    color=#fd6b3c
                 ></v-text-field>
               </v-col>
               <v-col
@@ -46,11 +41,11 @@
               >
                 <v-btn
                     icon
-                    color=#3685B1
+                    color=#fd6b3c
                     x-large
                     elevation="2"
                 >
-                  <v-icon>mdi-plus</v-icon>
+                  <v-icon color=#6bb2b8>mdi-plus</v-icon>
                 </v-btn>
               </v-col>
             </v-row>
@@ -60,14 +55,14 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-              color=#3685B1
+              color=#6bb2b8
               text
               @click="dialog = false"
           >
             Close
           </v-btn>
           <v-btn
-              color=#3685B1
+              color=#6bb2b8
               text
               @click="dialog = false"
           >
