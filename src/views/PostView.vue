@@ -10,7 +10,7 @@
                 size="125"
                 tile
             >
-              <img src="../assets/Profile_Pic_1.jpg">
+              <img src="../assets/profile_Pics/serpiente.png">
             </v-avatar>
             <p class="text-center black--text pt-n16"> H.P.L0vecraft
             </p>
@@ -101,7 +101,7 @@
                   size="125"
                   tile
               >
-                <img src="../assets/Profile_Pic_1.jpg">
+                <img src="../assets/profile_Pics/planta-carnivora.png">
               </v-avatar>
               <p class="text-center black--text pt-n16"> Response User 1
               </p>
@@ -188,7 +188,7 @@
                   size="125"
                   tile
               >
-                <img src="../assets/Profile_Pic_1.jpg">
+                <img src="../assets/profile_Pics/pez.png">
               </v-avatar>
               <p class="text-center black--text pt-n16"> Response User 2
               </p>

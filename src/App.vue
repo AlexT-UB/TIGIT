@@ -29,12 +29,20 @@
       </v-row>
       <v-row>
         <v-btn
+            color=#6bb2b8
             style="position:fixed; top:10%; right:2%;"
-            color=#fd6b3c
-            icon
             @click.stop="drawer = !drawer"
+            elevation="4"
+            x-large
+            justify="center"
         >
-          <v-icon color=#fd6b3c>mdi-chevron-left</v-icon>
+          <v-list-item class="px-2">
+            <v-list-item-avatar>
+              <v-img src="./assets/profile_Pics/tortuga.png"></v-img>
+            </v-list-item-avatar>
+
+            <v-list-item-title>CatLover22</v-list-item-title>
+          </v-list-item>
         </v-btn>
       </v-row>
     </v-app-bar>
@@ -48,7 +56,7 @@
       >
         <v-list-item class="px-2">
           <v-list-item-avatar>
-            <v-img src="./assets/Profile_Pic.jpg"></v-img>
+            <v-img src="./assets/profile_Pics/tortuga.png"></v-img>
           </v-list-item-avatar>
 
           <v-list-item-title>CatLover22</v-list-item-title>

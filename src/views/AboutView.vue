@@ -13,7 +13,7 @@
               size="125"
               tile
           >
-            <img src="../assets/Profile_Pic_1.jpg">
+            <img src="../assets/profile_Pics/escorpion.png">
           </v-avatar>
           <p class="text-center black--text pt-n16" v-text = "Random_User">
           </p>
