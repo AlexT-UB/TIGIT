@@ -163,22 +163,23 @@ export default {
         { title: 'Users', icon: 'mdi-account-group-outline' },
       ],
       items: [
-        { title: 'Why is my SAT Solver not working', username: 'Edgar1809', date: '5:01 5/6/2022',
-          text: "So my group and I have written a little SAT-Solver for a school project but I have NO CLUE why it is " +
-              "not working. Normally I would ask a question to solve a problem but I simply do not know what is " +
-              "going on and why I am having this problem. There isn't an error. It just stops processing after a " +
-              "while. We've all been trying to solve it for a couple days now, and looking online for advice, but " +
-              "çwe haven't found anything. I added the code for main in the attached file." +
-              "Please help, I honestly do not know how to solve this.",
+        { title: 'Porque no funciona mi SAT-Solver?', username: 'Edgar1809', date: '5:01 5/6/2022',
+          text: "Mi grupo y yo hemos escrito un pequeño SAT-Solver para un proyecto universitario, pero NO TENGO NI " +
+              "IDEA de por qué es que no funciona. Normalmente preguntaría para algo concreto para resolver el " +
+              "problema, pero simplemente no sé qué y por qué tengo este problema. No nos sale ningún error. " +
+              "Simplemente deja de procesarse después de un rato. Todos hemos estado tratando de resolverlo durante " +
+              "este par de días y buscando consejos online, pero no hemos encontrado nada. Agregué el código para " +
+              "main en el archivo adjunto. Por favor, ayuda, sinceramente no sé cómo resolver esto.",
           image: null, profile_pic: require("../assets/profile_Pics/abeja.png"), hastags: "#SAT_Solvers, #Coding, " +
               "#UnknownCodingError, #Academia",
         docs: "code_snippet.txt"},
-        { title: 'Can someone help me decipher these formulas the teacher wrote?',
+        { title: 'Alguien porfavor me puede descifrar estas formulas que ha mandado mi profesor?',
           username: 'Opoossum_01', date: '4:59 5/6/2022',
-          text: "My second year graphs teacher just sent us these formulas to study for the final, but I do not " +
-              "understand them. We have never seen them in class, nor has she explained what they mean or do. I am " +
-              "lost and confused and would really appreciate if someone makes some sense out of this bullcrap." +
-              "Please and thank you in advanced",
+          text: "Hola todos. Soy una estudiante de segundo de carrera de mates de la UMSA, y mi profesor de grafos " +
+              "nos acaba de mandar este .jpg con formulas escritas a mano que dice quew saldrán en el examen. Nunca " +
+              "las hemos visto en clasem nunca las ha mencionado, y no nos ha dado ninguna explicación de que son o " +
+              "que hacen. Estoy honestamente confundida y no se por donde empezar. Si alguine me las pudiese explicar" +
+              " o decirme como se llaman, realmente se aprecaría mucho.",
           profile_pic: require("../assets/profile_Pics/ballena.png"),
           image: require("../assets/post_Pics/istockphoto-696935130-612x612.jpg"), docs: "formulas.jpg",
           hastags: "#Graphs, #Maths, #UnknownFormulas, #Urgent, #UMSA, #Academia"},
