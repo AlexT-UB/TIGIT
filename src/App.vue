@@ -106,9 +106,9 @@ export default {
     return {
       drawer: false,
       navigation: [
-        { title: 'Home', icon: 'mdi-home-city' },
+        { title: 'Inicio', icon: 'mdi-home-city' },
         { title: 'Mi cuenta', icon: 'mdi-account' },
-        { title: 'Users', icon: 'mdi-account-group-outline' },
+        { title: 'Social', icon: 'mdi-account-group-outline' },
       ],
       mini: true,
     }
