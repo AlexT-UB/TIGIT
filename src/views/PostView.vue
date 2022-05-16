@@ -23,11 +23,17 @@
           <div class="text-body-2 font-italic"> 5:02 12/12/2022
           </div>
         </v-card-title>
-        <v-card-subtitle class ="orange--text text-left"> #UB #Coffee #Hypnos
+        <v-card-subtitle class ="orange--text text-left"> #English, #Texto, #Escriptura, #Horror, #FeedbackEscritura,
+          #Personal
         </v-card-subtitle>
 
-        <v-card-text class="black--text"> May the merciful gods, if indeed there be such, guard those hours when no
-          power of the will, or drug that the cunning of man devises, can keep me from the chasm of sleep.
+        <v-card-text class="black--text">
+          <p>¡Hola a todos! Estaba aburrido en clase y he escrito este par de lineas.</p>
+          <p>May the merciful gods, if indeed there be such, guard those hours when no
+            power of the will, or drug that the cunning of man devises, can keep me from the chasm of sleep.</p>
+          <p>¿Que pensais? Me he inspirado en el flautista del grande Beksinski. Esatba pensado de utilizar esto para
+            hacer un pequeño relato, de alguien que ahce contacto con el mas allá en la tierra de los sueños y llamarlo
+            algo como Hypnos. ¿Alguna sugerencia o critica?</p>
         </v-card-text>
           <v-row>
              <v-col
@@ -89,7 +95,7 @@
             </v-col>
            </v-row>
           </v-col>
-        <v-img height="500" src = "../assets/hypnos.jpg"/>
+        <v-img height="500" src = "../assets/post_Pics/Beksinski_wallpaper.jpg"/>
 
         </v-row>
       </v-card>
@@ -103,16 +109,16 @@
               >
                 <img src="../assets/profile_Pics/planta-carnivora.png">
               </v-avatar>
-              <p class="text-center black--text pt-n16"> Response User 1
+              <p class="text-center black--text pt-n16"> ClarkAshton93
               </p>
             </v-col>
             <v-col>
               <v-card-text class = "mt-10">
-                <div class="black--text"> This would be the first response. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="black--text"> <p>Realmente me gusta mucho! Y no tan solo la pintura de Beskinski, sino
+                  también el texo me parece muy evocativo. Yo creo que facilmente lo puedes expandir a un relato, y
+                  hasta jugar con una dinamica de dos protagonistas entrando en el mundo del ocultismo del sueño juntos
+                  o algo por el estilo</p>
+                  <p>Buena suerte y ya nos diras que tal!</p>
                 </div>
                 <v-spacer></v-spacer>
                 <div class="text-body-2 font-italic"> 5:02 12/12/2022
@@ -190,12 +196,14 @@
               >
                 <img src="../assets/profile_Pics/pez.png">
               </v-avatar>
-              <p class="text-center black--text pt-n16"> Response User 2
+              <p class="text-center black--text pt-n16"> 17_Bloch
               </p>
             </v-col>
             <v-col>
               <v-card-text class = "mt-10">
-                <div class="black--text"> This would be the second response.
+                <div class="black--text"> <p>Que talento! Me encanta! No solo creo que podría expandirlo a un relato,
+                  sino pienso que deberías! Y cuelga el texto cuando lo tengas!</p>
+                  <p>Dico esto, nunca había escuchado de este pintor, pero definitivamente me lo apunto</p>
                 </div>
                 <v-spacer></v-spacer>
                 <div class="text-body-2 font-italic"> 5:02 12/12/2022
