@@ -23,7 +23,7 @@
           <div class="text-body-2 font-italic"> 5:02 12/12/2022
           </div>
         </v-card-title>
-        <v-card-subtitle class ="light-blue--text text-left"> #UB #Coffee #Hypnos
+        <v-card-subtitle class ="orange--text text-left"> #UB #Coffee #Hypnos
         </v-card-subtitle>
 
         <v-card-text class="black--text"> May the merciful gods, if indeed there be such, guard those hours when no
