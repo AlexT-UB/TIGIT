@@ -40,7 +40,7 @@
                     </div>
                   </v-card-title>
 
-                  <v-card-subtitle class ="orange--text text-left secondary--text" v-text = "item.hastags">
+                  <v-card-subtitle class ="orange--text text-left" v-text = "item.hastags">
                   </v-card-subtitle>
 
                   <v-card-text class="black--text" v-text="item.text"/>
@@ -163,23 +163,25 @@ export default {
         { title: 'Users', icon: 'mdi-account-group-outline' },
       ],
       items: [
-        { title: 'First Post', username: 'A_Random_User', date: '5:01 5/6/2022',
-          text: 'This is an example text for the first one. \n' +
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ' +
-              'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +
-              'aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ' +
-              'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa' +
-              'qui officia deserunt mollit anim id est laborum.', profile_pic: require("../assets/profile_Pics/abeja.png"),
-          image: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg', hastags: "#UB, #Hashtags",
-        docs: "ExampleDoc.pdf"},
-        { title: 'Second Post', username: 'Another_Random_User', date: '4:59 5/6/2022',
-          text: 'This is an example text for the second one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
-              'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud' +
-              ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
-              'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
-              'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          profile_pic: require("../assets/profile_Pics/ballena.png"), image: null, docs: "Another_Docs.pptx",
-          hastags: "#UB, #Hashtags"},
+        { title: 'Why is my SAT Solver not working', username: 'Edgar1809', date: '5:01 5/6/2022',
+          text: "So my group and I have written a little SAT-Solver for a school project but I have NO CLUE why it is " +
+              "not working. Normally I would ask a question to solve a problem but I simply do not know what is " +
+              "going on and why I am having this problem. There isn't an error. It just stops processing after a " +
+              "while. We've all been trying to solve it for a couple days now, and looking online for advice, but " +
+              "çwe haven't found anything. I added the code for main in the attached file." +
+              "Please help, I honestly do not know how to solve this.",
+          image: null, profile_pic: require("../assets/profile_Pics/abeja.png"), hastags: "#SAT_Solvers, #Coding, " +
+              "#UnknownCodingError, #Academia",
+        docs: "code_snippet.txt"},
+        { title: 'Can someone help me decipher these formulas the teacher wrote?',
+          username: 'Opoossum_01', date: '4:59 5/6/2022',
+          text: "My second year graphs teacher just sent us these formulas to study for the final, but I do not " +
+              "understand them. We have never seen them in class, nor has she explained what they mean or do. I am " +
+              "lost and confused and would really appreciate if someone makes some sense out of this bullcrap." +
+              "Please and thank you in advanced",
+          profile_pic: require("../assets/profile_Pics/ballena.png"),
+          image: require("../assets/post_Pics/istockphoto-696935130-612x612.jpg"), docs: "formulas.jpg",
+          hastags: "#Graphs, #Maths, #UnknownFormulas, #Urgent, #UMSA, #Academia"},
         { title: 'Third Post', username: 'Placeholder_McDoctorate', date: '4:58 5/6/2022',
           text: 'This is an example text for the third one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
               'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud' +
