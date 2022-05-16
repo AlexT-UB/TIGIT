@@ -29,20 +29,17 @@
       </v-row>
       <v-row>
         <v-btn
+            icon
             color=#6bb2b8
             style="position:fixed; top:10%; right:2%;"
             @click.stop="drawer = !drawer"
             elevation="4"
-            x-large
+            fab
             justify="center"
         >
-          <v-list-item class="px-2">
-            <v-list-item-avatar>
-              <v-img src="./assets/profile_Pics/tortuga.png"></v-img>
-            </v-list-item-avatar>
-
-            <v-list-item-title>CatLover22</v-list-item-title>
-          </v-list-item>
+          <v-avatar>
+            <v-img src="./assets/profile_Pics/tortuga.png"></v-img>
+          </v-avatar>
         </v-btn>
       </v-row>
     </v-app-bar>
@@ -107,7 +104,7 @@ export default {
   },
   data () {
     return {
-      drawer: true,
+      drawer: false,
       navigation: [
         { title: 'Home', icon: 'mdi-home-city' },
         { title: 'Mi cuenta', icon: 'mdi-account' },
@@ -118,15 +115,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.v-card__title {
-  color: black!important;
-}
-.v-card__subtitle {
-  color: black!important;
-}
-.v-card__text {
-  color: black!important;
-}
-</style>
