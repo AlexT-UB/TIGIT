@@ -183,21 +183,17 @@ export default {
           profile_pic: require("../assets/profile_Pics/ballena.png"),
           image: require("../assets/post_Pics/istockphoto-696935130-612x612.jpg"), docs: "formulas.jpg",
           hastags: "#Graphs, #Maths, #UnknownFormulas, #Urgent, #UMSA, #Academia"},
-        { title: 'Third Post', username: 'Placeholder_McDoctorate', date: '4:58 5/6/2022',
-          text: 'This is an example text for the third one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
-              'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud' +
-              ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
-              'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
-              'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          profile_pic: require("../assets/profile_Pics/blowfish.png"), docs: null,
-          image: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg', hastags: "#UB, " +
-              "#Hashtags"},
-        { title: 'Fourth Post', username: 'Placeholder_McDoctorate', date: '4:57 5/6/2022',
-          text: 'This is an example text for the fourth one. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ' +
-              'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud' +
-              ' exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ' +
-              'reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ' +
-              'cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        { title: 'Comparto mis apuntes!', username: 'Ligotti22', date: '4:58 5/6/2022',
+          text: ' Os comparto mis apuntes de Estadísticas(363011) que la cursé el año pasado. También he notado ' +
+              'que muchos de nosotros están pidiendo apuntes de diferentes asignaturas, así que creo este nuevo tag ' +
+              '#APUNTES para que todos lo vean! Suerte!!!',
+          profile_pic: require("../assets/profile_Pics/blowfish.png"), docs: null, image: null, hastags: "#Apuntes, " +
+              "#UB, #Estadisticas, #Academia"},
+        { title: 'Clarificación de un mensaje de la UB', username: 'YellowHoward', date: '4:57 5/6/2022',
+          text: 'Alguien me puede clarificar si hay clase o no en matesfest de la UB? Bon dia, aquest dimecres 27 ' +
+              'd’abril (dia no lectiu) es celebra la MATEFEST-INFOFEST, una festa de las Matemàtiques i Informàtica ' +
+              'organitzada per l’alumnat de la nostra facultat. Durant el matí hi haurà stands i xerrades adreçades ' +
+              'principalment a l’alumnat de secundaria.',
           profile_pic: require("../assets/profile_Pics/erizo.png"),image: null, docs: null},
         { title: 'Fifth Post', username: 'Placeholder_McDoctorate', date: '4:57 5/6/2022',
           profile_pic: require("../assets/profile_Pics/escorpion.png"),
