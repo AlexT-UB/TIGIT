@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from "@/views/HomeView";
+import MainScreen from "@/views/MainScreen"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    name: 'MainScreen',
+    component: MainScreen
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: HomeView
   },
