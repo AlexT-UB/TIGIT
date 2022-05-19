@@ -22,6 +22,6 @@ export default {
 </script>
 <style scoped>
 .v-carousel{
-  margin-top:200px
+  margin-top:150px
 }
 </style>
