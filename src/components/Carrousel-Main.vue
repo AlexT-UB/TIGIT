@@ -1,5 +1,5 @@
 <template>
-  <v-carousel hide-delimiters>
+  <v-carousel  cycle show-arrows-on-hover height="500">
     <v-carousel-item
       v-for="(item, i) in items"
       :key="i"
@@ -12,14 +12,16 @@ export default {
   data() {
     return {
       items: [
-
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
-        },
-        { src: "../assets/post_Pics/durham.png" },
-        { src: "src/assets/logo.jpeg" },
+        {src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"},
+        { src: require("@/assets/banner_Pics/comparte.jpg") },
+        { src: require("@/assets/banner_Pics/tigit.jpg") },
       ],
     };
   },
 };
 </script>
+<style scoped>
+.v-carousel{
+  margin-top:200px
+}
+</style>

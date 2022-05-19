@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from "@/views/HomeView";
+import HomeView from "@/views/HomeView"
 import MainScreen from "@/views/MainScreen"
+import FaqsView from "@/views/FaqsView"
+import SettingsView from "@/views/SettingsView"
+import ProfileView from "@/views/ProfileView"
 
 Vue.use(VueRouter)
 
@@ -15,6 +18,21 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: HomeView
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: ProfileView
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: SettingsView
+  },
+  {
+    path: '/faqs',
+    name: 'Faqs',
+    component: FaqsView
   },
   {
     path: '/post',
